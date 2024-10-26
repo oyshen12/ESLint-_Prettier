@@ -1,12 +1,4 @@
 <script setup lang="ts">
-interface IProps {
-  msg?: string;
-}
-
-withDefaults(defineProps<IProps>(), {
-  msg: 'qwe',
-});
-
 //"no-await-in-loop": "error"
 async function foo() {
   for (let i = 0; i < 10; i++) {
@@ -59,30 +51,18 @@ const addLengthOfSinglePage = async (pageNum: number): Promise<void> => {
 Promise.all([addLengthOfSinglePage(1), addLengthOfSinglePage(2)]).then(() => {
   console.log('The combined length of both pages is', totalLength);
 });
+
+// "id-match": ["error", "^[a-z]+([A-Z][a-z]+)*$"]
+const my_favorite_color = "#112C85";
+console.log('i ', my_favorite_color);
+
+// "init-declarations": ["error", "always"]
+let b;
+console.log(b)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" class="button-classssssssssssssssssssssssssssssssssssssssssss" id="button-id"></button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-  </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
-    starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <h1>ESLint-Prettier-Stylelint Config</h1>
 </template>
 
 <style scoped>

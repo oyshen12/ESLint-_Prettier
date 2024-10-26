@@ -20,6 +20,7 @@
         "prettier"
     ],
     "rules": {
+        // These rules relate to possible logic errors in code:
         "no-await-in-loop": "error",
         "no-duplicate-imports": "error",
         "no-promise-executor-return": "error",
@@ -28,6 +29,9 @@
         "no-unmodified-loop-condition": "error",
         "no-unreachable-loop": "error",
         "require-atomic-updates": "error",
-        "no-var": "error"
+        "no-var": "error",
+        // These rules suggest alternate ways of doing things:
+        "id-match": ["error", "^[a-z]+([A-Z][a-z]+)*$"],
+        "init-declarations": ["error", "always"]
     }
 }
