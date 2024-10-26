@@ -53,12 +53,12 @@ Promise.all([addLengthOfSinglePage(1), addLengthOfSinglePage(2)]).then(() => {
 });
 
 // "id-match": ["error", "^[a-z]+([A-Z][a-z]+)*$"]
-const my_favorite_color = "#112C85";
+const my_favorite_color = '#112C85';
 console.log('i ', my_favorite_color);
 
 // "init-declarations": ["error", "always"]
 let b;
-console.log(b)
+console.log(b);
 </script>
 
 <template>
