@@ -33,6 +33,8 @@
         "no-var": "error",
         // These rules suggest alternate ways of doing things:
         "id-match": ["error", "^[a-z]+([A-Z][a-z]+)*$"],
-        "init-declarations": ["error", "always"]
+        "init-declarations": ["error", "always"],
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/ban-ts-comment": "error"
     }
 }

@@ -59,6 +59,12 @@ console.log('i ', my_favorite_color);
 // "init-declarations": ["error", "always"]
 let b;
 console.log(b);
+
+// "@typescript-eslint/explicit-function-return-type": "error",
+function test() {
+  return;
+}
+test();
 </script>
 
 <template>
